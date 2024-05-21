@@ -22,6 +22,6 @@ class ProductAdmin(admin.ModelAdmin):
 
     def get_prepopulated_fields(self, request, obj=None):
         return {
-            'slug': ('name',)
+            'slug': ('title',)
         }
 
